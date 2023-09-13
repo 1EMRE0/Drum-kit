@@ -145,6 +145,34 @@ for(var i=0; i < document.querySelectorAll(".drum").length; i++){
 
  );
 
+ var isAnimationActive = false;
+
+function addAnimationClass() {
+  var buttons = document.getElementsByClassName("drum");
+  for (var i = 0; i < buttons.length; i++) {
+    buttons[i].classList.add("drumAnimation");
+  }
+}
+
+function removeAnimationClass() {
+  var buttons = document.getElementsByClassName("drum");
+  for (var i = 0; i < buttons.length; i++) {
+    buttons[i].classList.remove("drumAnimation");
+  }
+}
+
+document.addEventListener("keydown", function(event) {
+  if (event.keyCode === 51 || event.key === "3") {
+    if (!isAnimationActive) {
+      addAnimationClass();
+      isAnimationActive = true;
+    } else {
+      removeAnimationClass();
+      isAnimationActive = false;
+    }
+  }
+});
+
 
 
 
