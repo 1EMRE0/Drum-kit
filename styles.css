@@ -80,6 +80,8 @@ background-image: url("images/tom4.png");
   background-color: white;
 }
 
+
+
 @keyframes danceAnimation {
   0% { transform: rotate(0deg); }
   25% { transform: rotate(15deg); }
