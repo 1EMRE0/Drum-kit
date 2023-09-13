@@ -79,3 +79,15 @@ background-image: url("images/tom4.png");
   margin: 10px;
   background-color: white;
 }
+
+@keyframes danceAnimation {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(15deg); }
+  50% { transform: rotate(0deg); }
+  75% { transform: rotate(-15deg); }
+  100% { transform: rotate(0deg); }
+}
+
+.drumAnimation {
+  animation: danceAnimation 0.5s infinite;
+}
