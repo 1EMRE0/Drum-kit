@@ -131,7 +131,8 @@ for(var i=0; i < document.querySelectorAll(".drum").length; i++){
             var ses = new Audio(sesURL);
             ses.play();
    }
-      else if(event.key=="3"){
+
+   else if(event.key=="3"){
       var sesURL = "sounds/3.mp3";
             var ses = new Audio(sesURL);
             ses.play();
@@ -144,6 +145,8 @@ for(var i=0; i < document.querySelectorAll(".drum").length; i++){
 
 
  );
+
+
 
  var isAnimationActive = false;
 
@@ -172,8 +175,3 @@ document.addEventListener("keydown", function(event) {
     }
   }
 });
-
-
-
-
-
