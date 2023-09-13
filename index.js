@@ -131,6 +131,11 @@ for(var i=0; i < document.querySelectorAll(".drum").length; i++){
             var ses = new Audio(sesURL);
             ses.play();
    }
+      else if(event.key=="3"){
+      var sesURL = "sounds/3.mp3";
+            var ses = new Audio(sesURL);
+            ses.play();
+   }
 
    }
 
